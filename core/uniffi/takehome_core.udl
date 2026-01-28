@@ -1,0 +1,128 @@
+// TakeHome Core - UniFFI Interface Definition
+// This file defines the public API exposed to Swift, Kotlin, and other platforms
+
+namespace takehome_core {
+    // Version and metadata
+    string get_version();
+    u32 get_tax_year();
+
+    // Main calculation
+    [Throws=TaxCalcError]
+    TaxResultFFI calculate_taxes(
+        string gross_income,
+        string filing_status,
+        string state_code,
+        string pre_tax_deductions,
+        string post_tax_deductions,
+        string traditional_401k,
+        string roth_401k
+    );
+
+    // Scenario comparison
+    [Throws=TaxCalcError]
+    ScenarioComparisonFFI compare_scenarios(
+        string base_gross,
+        string base_filing_status,
+        string base_state,
+        string base_pre_tax,
+        string base_post_tax,
+        string base_traditional_401k,
+        string base_roth_401k,
+        string scenario_gross,
+        string scenario_filing_status,
+        string scenario_state,
+        string scenario_pre_tax,
+        string scenario_post_tax,
+        string scenario_traditional_401k,
+        string scenario_roth_401k
+    );
+
+    // Timeframe conversion
+    [Throws=TaxCalcError]
+    TimeframeFFI convert_timeframes(string annual);
+
+    // Household split
+    [Throws=TaxCalcError]
+    HouseholdSplitFFI calculate_household_split(
+        string primary_net,
+        string partner_net,
+        string shared_expense,
+        string split_method
+    );
+
+    // Reference data
+    sequence<string> get_all_state_codes();
+    sequence<string> get_all_filing_statuses();
+    boolean state_has_no_income_tax(string state_code);
+};
+
+// Error type
+[Error]
+enum TaxCalcError {
+    "InvalidDecimal",
+    "InvalidFilingStatus",
+    "InvalidState",
+    "CalculationError",
+};
+
+// Tax calculation result
+dictionary TaxResultFFI {
+    // Income
+    string gross_annual;
+    string net_annual;
+    string net_monthly;
+    string net_biweekly;
+    string net_weekly;
+    string net_daily;
+    string net_hourly;
+    string take_home_percentage;
+
+    // Federal
+    string federal_tax;
+    string federal_effective_rate;
+    string federal_marginal_rate;
+
+    // State
+    string state_code;
+    string state_income_tax;
+    string state_local_tax;
+    string state_sdi;
+    string state_total_tax;
+
+    // FICA
+    string social_security;
+    string medicare;
+    string additional_medicare;
+    string fica_total;
+
+    // Totals
+    string total_taxes;
+    string total_effective_rate;
+};
+
+// Scenario comparison result
+dictionary ScenarioComparisonFFI {
+    TaxResultFFI base;
+    TaxResultFFI scenario;
+    string net_difference;
+    string monthly_difference;
+    boolean is_positive;
+};
+
+// Timeframe breakdown
+dictionary TimeframeFFI {
+    string annual;
+    string monthly;
+    string bi_weekly;
+    string weekly;
+    string daily;
+    string hourly;
+};
+
+// Household split result
+dictionary HouseholdSplitFFI {
+    string primary_ratio;
+    string partner_ratio;
+    string primary_amount;
+    string partner_amount;
+};

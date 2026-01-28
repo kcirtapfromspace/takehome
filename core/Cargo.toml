@@ -1,0 +1,55 @@
+[package]
+name = "takehome-core"
+version = "0.1.0"
+edition = "2021"
+authors = ["TakeHome Team"]
+description = "Core calculation engine for TakeHome financial planning app"
+license = "MIT"
+
+[lib]
+crate-type = ["staticlib", "cdylib", "lib"]
+name = "takehome_core"
+
+[dependencies]
+# Precise decimal arithmetic for financial calculations
+rust_decimal = { version = "1.33", features = ["serde"] }
+rust_decimal_macros = "1.33"
+
+# Serialization
+serde = { version = "1.0", features = ["derive"] }
+serde_json = "1.0"
+
+# UniFFI for cross-platform bindings (Swift, Kotlin, Python)
+uniffi = { version = "0.25" }
+
+# Error handling
+thiserror = "1.0"
+
+# Date handling
+chrono = { version = "0.4", default-features = false, features = ["std", "serde"] }
+
+# Lazy initialization for embedded data
+once_cell = "1.19"
+
+[build-dependencies]
+uniffi = { version = "0.25", features = ["build"] }
+
+[dev-dependencies]
+# Benchmarking
+criterion = { version = "0.5", features = ["html_reports"] }
+# Property-based testing
+proptest = "1.4"
+
+[[bench]]
+name = "calculations"
+harness = false
+
+[features]
+default = []
+# Compile tax data directly into binary
+embedded-data = []
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = 3

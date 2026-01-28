@@ -1,0 +1,39 @@
+# Rust build artifacts
+/core/target/
+**/*.rs.bk
+Cargo.lock
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# iOS build artifacts
+*.xcuserstate
+xcuserdata/
+DerivedData/
+*.ipa
+*.dSYM.zip
+*.dSYM
+
+# Environment files
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+
+# Test coverage
+coverage/
+*.lcov
