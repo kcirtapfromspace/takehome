@@ -1,0 +1,19 @@
+# Rust formatting configuration for TakeHome Core
+# Uses only stable rustfmt options
+
+# Use the 2021 edition style
+edition = "2021"
+
+# Maximum line width
+max_width = 100
+
+# Use spaces for indentation
+hard_tabs = false
+tab_spaces = 4
+
+# Import ordering
+reorder_imports = true
+reorder_modules = true
+
+# Trailing commas in match blocks
+match_block_trailing_comma = true

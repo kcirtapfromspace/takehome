@@ -1,0 +1,7 @@
+# Clippy configuration for TakeHome Core
+
+# Allow certain patterns common in financial calculations
+avoid-breaking-exported-api = true
+
+# Cognitive complexity threshold
+cognitive-complexity-threshold = 25
