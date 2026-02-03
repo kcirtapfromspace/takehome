@@ -1,0 +1,152 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/DetailedDeductionsStepView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Pre-Tax Deductions",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "Post-Tax Deductions",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 36
+        }
+      },
+      {
+        "comment": "",
+        "key": "These reduce your taxable income",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "These are taken from your after-tax pay",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 42
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pre-Tax Deductions",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "Post-Tax Deductions",
+        "location": {
+          "startingColumn": 64,
+          "startingLine": 72
+        }
+      },
+      {
+        "comment": "",
+        "key": "/year",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "% of Pay",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your annual contribution exceeds the IRS limit",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Type",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 190
+        }
+      },
+      {
+        "comment": "",
+        "key": "Frequency",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 231
+        }
+      },
+      {
+        "comment": "",
+        "key": "$",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 208
+        }
+      },
+      {
+        "comment": "",
+        "key": "%",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 211
+        }
+      },
+      {
+        "comment": "",
+        "key": "IRS Limit: %@",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 252
+        }
+      },
+      {
+        "comment": "",
+        "key": "(+%@ if 50+)",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 256
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual equivalent:",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "(%@%% of salary)",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 280
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,128 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/DeductionSetupStepView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "You can always change this later in Settings",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "How would you like to enter deductions?",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 17
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pre-tax deductions reduce your taxable income",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traditional 401(k) contributions reduce your taxable income",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 57
+        }
+      },
+      {
+        "comment": "",
+        "key": "401(k) Contribution",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 49
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 52
+        }
+      },
+      {
+        "comment": "",
+        "key": "$",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 62
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your portion of employer-sponsored health insurance premiums",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Health Insurance",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 84
+        }
+      },
+      {
+        "comment": "",
+        "key": "$",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 94
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 43,
+          "startingLine": 96
+        }
+      },
+      {
+        "comment": "",
+        "key": "You'll be able to enter all 18 deduction types with flexible input options (dollar amounts or percentages, different frequencies).",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 122
+        }
+      },
+      {
+        "comment": "",
+        "key": "Detailed Mode",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 117
+        }
+      }
+    ]
+  },
+  "version": 1
+}

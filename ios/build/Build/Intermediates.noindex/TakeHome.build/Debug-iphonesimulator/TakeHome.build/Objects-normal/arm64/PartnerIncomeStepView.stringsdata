@@ -1,0 +1,152 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/PartnerIncomeStepView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Partner's income is used to calculate fair expense splitting based on income ratios",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 169
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner's Income",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your partner's income for proportional expense splitting",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "Partner's Name",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 41
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 45
+        }
+      },
+      {
+        "comment": "",
+        "key": "Input Frequency",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 78
+        }
+      },
+      {
+        "comment": "",
+        "key": "Gross Salary",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 54
+        }
+      },
+      {
+        "comment": "",
+        "key": "Before taxes",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 58
+        }
+      },
+      {
+        "comment": "",
+        "key": "$",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "0",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 68
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual Salary",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monthly",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pay Frequency",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 115
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pay Frequency",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 119
+        }
+      },
+      {
+        "comment": "",
+        "key": "State",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 129
+        }
+      },
+      {
+        "comment": "",
+        "key": "State",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 133
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filing Status",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 147
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filing Status",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 151
+        }
+      }
+    ]
+  },
+  "version": 1
+}

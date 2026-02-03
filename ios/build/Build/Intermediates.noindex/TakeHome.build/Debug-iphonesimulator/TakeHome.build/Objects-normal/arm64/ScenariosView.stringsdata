@@ -1,0 +1,176 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Scenarios/ScenariosView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Scenarios",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Profile Yet",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 69
+        }
+      },
+      {
+        "comment": "",
+        "key": "Complete your income profile first to create what-if scenarios",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 73
+        }
+      },
+      {
+        "comment": "",
+        "key": "No Scenarios Yet",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 89
+        }
+      },
+      {
+        "comment": "",
+        "key": "Create what-if scenarios to see how changes affect your take-home pay",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 93
+        }
+      },
+      {
+        "comment": "",
+        "key": "Delete",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 149
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 156
+        }
+      },
+      {
+        "comment": "",
+        "key": "New Scenario",
+        "location": {
+          "startingColumn": 65,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Edit Scenario",
+        "location": {
+          "startingColumn": 82,
+          "startingLine": 239
+        }
+      },
+      {
+        "comment": "",
+        "key": "Scenario Name",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 202
+        }
+      },
+      {
+        "comment": "",
+        "key": "Income",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 206
+        }
+      },
+      {
+        "comment": "",
+        "key": "Location & Filing",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 213
+        }
+      },
+      {
+        "comment": "",
+        "key": "Deductions",
+        "location": {
+          "startingColumn": 25,
+          "startingLine": 227
+        }
+      },
+      {
+        "comment": "",
+        "key": "Name",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 203
+        }
+      },
+      {
+        "comment": "",
+        "key": "State",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filing Status",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 220
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 243
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 250
+        }
+      },
+      {
+        "comment": "",
+        "key": "Comparison",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 298
+        }
+      },
+      {
+        "comment": "",
+        "key": "per month",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 279
+        }
+      },
+      {
+        "comment": "",
+        "key": "Done",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 302
+        }
+      }
+    ]
+  },
+  "version": 1
+}
