@@ -1,0 +1,32 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/HouseholdTypeStepView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Who's in your household?",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 15
+        }
+      },
+      {
+        "comment": "",
+        "key": "This helps us calculate proportional expense splitting",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "Coming Soon",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 71
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,389 @@
+{
+  "" : {
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHome-primary.dia",
+    "emit-module-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHome-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHome-primary-emit-module.dia",
+    "pch" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHome-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHome-primary.swiftdeps"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/App/DependencyContainer.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DependencyContainer~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/App/TakeHomeApp.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeApp~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Core/DecimalConversions.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DecimalConversions~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Core/TakeHomeCoreWrapper.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/TakeHomeCoreWrapper~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Core/takehome_core.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/takehome_core~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/DeductionEntry.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionEntry~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/DeductionFrequency.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionFrequency~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/DeductionInputType.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionInputType~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/DeductionType.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionType~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/Expense.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Expense~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/FinancialProfile.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/FinancialProfile~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/HouseholdType.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdType~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/Income.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Income~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/OnboardingContext.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingContext~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/PartnerProfile.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerProfile~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Models/Scenario.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/Scenario~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Repositories/RepositoryProtocols.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RepositoryProtocols~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/BaseViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/BaseViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/DashboardViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/ExpenseViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpenseViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/HouseholdViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/IncomeViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/OnboardingViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/RetirementCalculatorViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/ViewModels/ScenarioViewModel.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenarioViewModel~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Dashboard/DashboardView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DashboardView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Expenses/ExpensesView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ExpensesView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Household/HouseholdView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Income/IncomeView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/IncomeView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/MainTabView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/MainTabView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/DeductionSetupStepView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DeductionSetupStepView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/DetailedDeductionsStepView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/DetailedDeductionsStepView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/HouseholdTypeStepView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/HouseholdTypeStepView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/OnboardingView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/OnboardingView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/PartnerIncomeStepView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/PartnerIncomeStepView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Retirement/RetirementCalculatorView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/RetirementCalculatorView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Scenarios/ScenariosView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/ScenariosView~partial.swiftmodule"
+  },
+  "/Users/thinkstudio/takehome/ios/TakeHome/Views/Settings/SettingsView.swift" : {
+    "const-values" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.swiftconstvalues",
+    "dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.d",
+    "diagnostics" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.dia",
+    "index-unit-output-path" : "/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.o",
+    "llvm-bc" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.bc",
+    "object" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.o",
+    "swift-dependencies" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView.swiftdeps",
+    "swiftmodule" : "/Users/thinkstudio/takehome/ios/build/Build/Intermediates.noindex/TakeHome.build/Debug-iphonesimulator/TakeHome.build/Objects-normal/arm64/SettingsView~partial.swiftmodule"
+  }
+}

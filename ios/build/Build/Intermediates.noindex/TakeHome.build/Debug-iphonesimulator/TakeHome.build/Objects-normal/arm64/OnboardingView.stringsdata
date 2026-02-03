@@ -1,0 +1,272 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Onboarding/OnboardingView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Back",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 167
+        }
+      },
+      {
+        "comment": "",
+        "key": "Skip",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "Welcome to TakeHome",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 222
+        }
+      },
+      {
+        "comment": "",
+        "key": "Let's calculate your real take-home pay and help you track your finances.",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 226
+        }
+      },
+      {
+        "comment": "",
+        "key": "What's your salary?",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 291
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter your gross (before taxes) salary",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 295
+        }
+      },
+      {
+        "comment": "",
+        "key": "$",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 303
+        }
+      },
+      {
+        "comment": "",
+        "key": "100,000",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 307
+        }
+      },
+      {
+        "comment": "",
+        "key": "Enter amount as:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 319
+        }
+      },
+      {
+        "comment": "",
+        "key": "Salary Input Frequency",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 323
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual Salary",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 335
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monthly",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 344
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pay Frequency",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 361
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pay Frequency",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 365
+        }
+      },
+      {
+        "comment": "",
+        "key": "Where do you live?",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 407
+        }
+      },
+      {
+        "comment": "",
+        "key": "This affects your state income tax",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 411
+        }
+      },
+      {
+        "comment": "",
+        "key": "State",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 417
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filing Status",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 428
+        }
+      },
+      {
+        "comment": "",
+        "key": "Filing Status",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 432
+        }
+      },
+      {
+        "comment": "",
+        "key": "Calculating...",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 465
+        }
+      },
+      {
+        "comment": "",
+        "key": "Your Take-Home Pay",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 474
+        }
+      },
+      {
+        "comment": "",
+        "key": "per year",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 482
+        }
+      },
+      {
+        "comment": "",
+        "key": "Monthly",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 492
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bi-Weekly",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 501
+        }
+      },
+      {
+        "comment": "",
+        "key": "Hourly",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 510
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total Taxes: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 518
+        }
+      },
+      {
+        "comment": "",
+        "key": "Effective Rate: %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 520
+        }
+      },
+      {
+        "comment": "",
+        "key": "You can add expenses now or skip and do it later",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 584
+        }
+      },
+      {
+        "comment": "",
+        "key": "Track Your Expenses",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 558
+        }
+      },
+      {
+        "comment": "",
+        "key": "Add your monthly expenses to see what's left after bills",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 562
+        }
+      },
+      {
+        "comment": "",
+        "key": "You're All Set!",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 607
+        }
+      },
+      {
+        "comment": "",
+        "key": "You can now see your full financial picture",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 611
+        }
+      },
+      {
+        "comment": "",
+        "key": "Go to Dashboard",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 622
+        }
+      }
+    ]
+  },
+  "version": 1
+}

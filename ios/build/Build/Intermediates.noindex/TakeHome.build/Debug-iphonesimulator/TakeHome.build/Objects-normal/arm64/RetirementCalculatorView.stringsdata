@@ -1,0 +1,488 @@
+{
+  "source": "/Users/thinkstudio/takehome/ios/TakeHome/Views/Retirement/RetirementCalculatorView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Retirement Calculator",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Cancel",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 85
+        }
+      },
+      {
+        "comment": "",
+        "key": "Save",
+        "location": {
+          "startingColumn": 28,
+          "startingLine": 90
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual Contributions",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "% Mode",
+        "location": {
+          "startingColumn": 52,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "$ Mode",
+        "location": {
+          "startingColumn": 63,
+          "startingLine": 113
+        }
+      },
+      {
+        "comment": "",
+        "key": "+",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 139
+        }
+      },
+      {
+        "comment": "",
+        "key": "=",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 153
+        }
+      },
+      {
+        "comment": "",
+        "key": "Employee",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 125
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@%% of salary",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 132
+        }
+      },
+      {
+        "comment": "",
+        "key": "Employer",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "Total",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traditional:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 176
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ (%@%%)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "Roth:",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 188
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ (%@%%)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 191
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ of %@",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 217
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ remaining",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 221
+        }
+      },
+      {
+        "comment": "",
+        "key": "Max",
+        "location": {
+          "startingColumn": 24,
+          "startingLine": 255
+        }
+      },
+      {
+        "comment": "",
+        "key": "/",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "$",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 269
+        }
+      },
+      {
+        "comment": "",
+        "key": "%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 295
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@/paycheck",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 331
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tap $ or % to switch modes",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 335
+        }
+      },
+      {
+        "comment": "",
+        "key": "Employer Match",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 373
+        }
+      },
+      {
+        "comment": "",
+        "key": "Match Percentage",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 379
+        }
+      },
+      {
+        "comment": "",
+        "key": "%",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 386
+        }
+      },
+      {
+        "comment": "",
+        "key": "50",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 382
+        }
+      },
+      {
+        "comment": "",
+        "key": "Match up to",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 391
+        }
+      },
+      {
+        "comment": "",
+        "key": "% of salary",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 398
+        }
+      },
+      {
+        "comment": "",
+        "key": "6",
+        "location": {
+          "startingColumn": 35,
+          "startingLine": 394
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vesting",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vesting",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 406
+        }
+      },
+      {
+        "comment": "",
+        "key": "0%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 407
+        }
+      },
+      {
+        "comment": "",
+        "key": "25%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 408
+        }
+      },
+      {
+        "comment": "",
+        "key": "50%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 409
+        }
+      },
+      {
+        "comment": "",
+        "key": "75%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 410
+        }
+      },
+      {
+        "comment": "",
+        "key": "100%",
+        "location": {
+          "startingColumn": 34,
+          "startingLine": 411
+        }
+      },
+      {
+        "comment": "",
+        "key": "Employer Contribution",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 420
+        }
+      },
+      {
+        "comment": "",
+        "key": "(%@ vested)",
+        "location": {
+          "startingColumn": 42,
+          "startingLine": 424
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tax Impact",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 448
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annual Tax Savings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 454
+        }
+      },
+      {
+        "comment": "",
+        "key": "From traditional 401(k) contributions",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 457
+        }
+      },
+      {
+        "comment": "",
+        "key": "-%@/mo",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 479
+        }
+      },
+      {
+        "comment": "",
+        "key": "Take-Home Reduction",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 471
+        }
+      },
+      {
+        "comment": "",
+        "key": "Net change in monthly income",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 474
+        }
+      },
+      {
+        "comment": "",
+        "key": "Effective Cost",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 488
+        }
+      },
+      {
+        "comment": "",
+        "key": "Contribution minus tax savings",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 491
+        }
+      },
+      {
+        "comment": "",
+        "key": "Without 401(k)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 507
+        }
+      },
+      {
+        "comment": "",
+        "key": "With 401(k)",
+        "location": {
+          "startingColumn": 30,
+          "startingLine": 522
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traditional vs Roth",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 543
+        }
+      },
+      {
+        "comment": "",
+        "key": "If you put %@ entirely into one type:",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 546
+        }
+      },
+      {
+        "comment": "",
+        "key": "All Traditional",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 553
+        }
+      },
+      {
+        "comment": "",
+        "key": "monthly take-home",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 560
+        }
+      },
+      {
+        "comment": "",
+        "key": "All Roth",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 571
+        }
+      },
+      {
+        "comment": "",
+        "key": "monthly take-home",
+        "location": {
+          "startingColumn": 26,
+          "startingLine": 578
+        }
+      },
+      {
+        "comment": "",
+        "key": "Traditional gives %@ more monthly take-home, but Roth grows tax-free.",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 595
+        }
+      },
+      {
+        "comment": "",
+        "key": "Both options have similar take-home impact.",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 596
+        }
+      },
+      {
+        "comment": "",
+        "key": "Catch-up contribution limit: +%@",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 617
+        }
+      },
+      {
+        "comment": "",
+        "key": "I'm 50 or older",
+        "location": {
+          "startingColumn": 20,
+          "startingLine": 613
+        }
+      }
+    ]
+  },
+  "version": 1
+}
