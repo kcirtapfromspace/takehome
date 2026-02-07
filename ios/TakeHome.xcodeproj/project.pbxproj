@@ -485,6 +485,10 @@
 					42005A411D3AA30085DDF961 = {
 						TestTargetID = A451956D798BC6127146A2E2;
 					};
+					A451956D798BC6127146A2E2 = {
+						DevelopmentTeam = 67C7724279;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = F714DB5456BE3E6F5607B8C8 /* Build configuration list for PBXProject "TakeHome" */;
@@ -712,9 +716,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67C7724279;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"../bindings\"",
@@ -778,9 +784,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGNING_ALLOWED = NO;
-				CODE_SIGNING_REQUIRED = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGNING_ALLOWED = YES;
+				CODE_SIGNING_REQUIRED = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 67C7724279;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"../bindings\"",
