@@ -100,8 +100,24 @@ jobs:
             -project "$PROJECT_DIR/TakeHome.xcodeproj" \
             -clonedSourcePackagesDirPath SourcePackages
 
+      - name: Unlock Keychain
+        env:
+          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+        run: |
+          if [ -n "$KEYCHAIN_PASSWORD" ]; then
+            security unlock-keychain -p "$KEYCHAIN_PASSWORD" ~/Library/Keychains/login.keychain-db
+            security set-keychain-settings -t 3600 -l ~/Library/Keychains/login.keychain-db
+          else
+            echo "::warning::KEYCHAIN_PASSWORD secret not set. Signing may fail if keychain is locked."
+          fi
+
+      - name: Clean Build Directory
+        run: rm -rf build/
+
       - name: Archive
         run: |
+          set -o pipefail
+          mkdir -p build
           xcodebuild archive \
             -scheme "$SCHEME" \
             -project "$PROJECT_DIR/TakeHome.xcodeproj" \
@@ -109,7 +125,16 @@ jobs:
             -archivePath "$ARCHIVE_PATH" \
             -destination 'generic/platform=iOS' \
             -allowProvisioningUpdates \
-            CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
+            2>&1 | tee build/archive.log
+
+      - name: Upload Archive Log on Failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: archive-log
+          path: build/archive.log
+          retention-days: 7
 
       - name: Export Archive
         run: |
