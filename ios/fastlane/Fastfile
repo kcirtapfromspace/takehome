@@ -53,7 +53,7 @@ platform :ios do
         signingStyle: "manual",
         signingCertificate: "Apple Distribution",
         provisioningProfiles: {
-          "com.takehome.app" => profile_name || profile_uuid
+          "com.takehomepay.app" => profile_name || profile_uuid
         }
       }
     else

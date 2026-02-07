@@ -18,7 +18,7 @@ on:
 env:
   SCHEME: TakeHome
   PROJECT_DIR: ios
-  BUNDLE_ID: com.takehome.app
+  BUNDLE_ID: com.takehomepay.app
 
 jobs:
   build:
