@@ -1,6 +1,7 @@
 import Foundation
 import Combine
 import SwiftUI
+import StoreKit
 
 // MARK: - Dashboard ViewModel
 @MainActor
@@ -355,6 +356,25 @@ final class DashboardViewModel: BaseViewModel {
             .assign(to: &$expenses)
     }
 
+    // MARK: - Review Prompt
+    private static let dashboardLoadCountKey = "dashboardLoadCount"
+    private static let reviewRequestThreshold = 5
+
+    private func requestReviewIfEligible() {
+        let count = UserDefaults.standard.integer(forKey: Self.dashboardLoadCountKey) + 1
+        UserDefaults.standard.set(count, forKey: Self.dashboardLoadCountKey)
+
+        guard count >= Self.reviewRequestThreshold, profile != nil else { return }
+
+        // Only request once at the threshold (Apple rate-limits automatically per version)
+        guard count == Self.reviewRequestThreshold else { return }
+
+        if let scene = UIApplication.shared.connectedScenes
+            .first(where: { $0.activationState == .foregroundActive }) as? UIWindowScene {
+            SKStoreReviewController.requestReview(in: scene)
+        }
+    }
+
     // MARK: - Actions
     func loadData() async {
         await performTaskWithoutResult { [weak self] in
@@ -369,6 +389,8 @@ final class DashboardViewModel: BaseViewModel {
 
             await self.recalculate()
         }
+
+        requestReviewIfEligible()
     }
 
     func recalculate() async {

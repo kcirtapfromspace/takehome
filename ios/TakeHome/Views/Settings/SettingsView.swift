@@ -221,6 +221,24 @@ struct SettingsView: View {
                 .foregroundColor(.secondary)
 
             VStack(spacing: 0) {
+                NavigationLink {
+                    PrivacyPolicyView()
+                } label: {
+                    HStack {
+                        Image(systemName: "hand.raised.fill")
+                            .foregroundColor(.accentColor)
+                        Text("Privacy Policy")
+                            .foregroundColor(.primary)
+                        Spacer()
+                        Image(systemName: "chevron.right")
+                            .font(.caption)
+                            .foregroundColor(.secondary)
+                    }
+                    .padding()
+                }
+
+                Divider()
+
                 Link(destination: URL(string: "https://github.com/takehome")!) {
                     HStack {
                         Image(systemName: "chevron.left.forwardslash.chevron.right")

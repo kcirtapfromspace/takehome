@@ -101,6 +101,11 @@ private struct DashboardContentView: View {
             } else if let result = viewModel.taxResult {
                 singleIncomeDetails(result: result)
             }
+
+            // Tax year disclaimer
+            Text("Based on 2024 tax rates")
+                .font(.caption2)
+                .foregroundColor(.secondary)
         }
         .padding()
         .frame(maxWidth: .infinity)

@@ -7,18 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0C50B36DA51B4CFBB856F560 /* LifeEventScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94783C9A280D4E93A2616A39 /* LifeEventScenario.swift */; };
-		B2C3D4E5F67890123456789A /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1B2C3D4E5F6789012345678 /* Transaction.swift */; };
 		0462D16B78E3D1488C25AFA1 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 771CB9DD8B97D478BDA2F9E5 /* SettingsView.swift */; };
+		07EA51AC1090916BE621568F /* DeductionInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9862BB6F39117E205EC131 /* DeductionInputType.swift */; };
+		100AAAF1D4EC5557470C97ED /* DeductionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 472F651CEFF31F464BDDC13E /* DeductionType.swift */; };
 		107E89BAC542F73CBA3F5E43 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87C1A50E64D3496D17DD953E /* BaseViewModel.swift */; };
 		158A575CECD0B03BD426F7E7 /* TakeHomeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ECCEC0FF2A915095453CC676 /* TakeHomeApp.swift */; };
 		18414F95A3BD3FB2BEF2826D /* HouseholdViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B598553B12BC0230816D00ED /* HouseholdViewModel.swift */; };
+		1D42CCE51802ABC77B2ECCEF /* LifeEventScenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3CA57E5C1CC65A68C62153 /* LifeEventScenario.swift */; };
 		211315C29D41051205BF2246 /* DashboardViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28451F6E1B8C414CF4488669 /* DashboardViewModelTests.swift */; };
 		21B09BF2A282979965C9FFB4 /* TakeHomeCoreWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = B10BF26AF1FAE0BCB4BB956F /* TakeHomeCoreWrapper.swift */; };
 		265DBA0D4788416C1E47E296 /* OnboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3D1335D0D582A496D44DB /* OnboardingUITests.swift */; };
 		2983B718057309D2FED0D73E /* IncomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A318D3C1C90A37B8D8857 /* IncomeViewModelTests.swift */; };
 		2AA651F810A9CC6C1A4B686E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A05E85F1A2DD36687319E5 /* DependencyContainer.swift */; };
 		32357C9FC26DF397E595F74F /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939E60A6056737E8E926267 /* DashboardViewModel.swift */; };
+		33DEC9A94EF96186D790E6AB /* DeductionFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4EE489DAB7F8FC05127FA1 /* DeductionFrequency.swift */; };
 		395154B27A9C4913C675401F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06CAFEBD39AF6B470B7F56 /* DashboardView.swift */; };
 		3D0C7D9A633F0F7316E5DED6 /* MockTakeHomeCore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56EE7973897283B26564FC51 /* MockTakeHomeCore.swift */; };
 		450284D8078E09D042D81715 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08C95B6C20ABA16A9CBF190E /* OnboardingViewModel.swift */; };
@@ -26,39 +28,39 @@
 		4EA9BA94B5F20A106741CD8E /* IncomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B21439590C3E57D705B2E233 /* IncomeView.swift */; };
 		546893391651699B801CC9AB /* HouseholdView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A1C68AD206122EF9218591A /* HouseholdView.swift */; };
 		5C0258718A76984FA06A052D /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9491F4CC9C31515FB978A583 /* OnboardingView.swift */; };
+		5F11C7C910B42740118DB35E /* HouseholdTypeStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D1051B6237880FA114A957E /* HouseholdTypeStepView.swift */; };
+		5FF0B46918CB7956CB5CF0F8 /* DeductionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F4CBF88098CCCA504BDF876 /* DeductionEntry.swift */; };
 		61A26C17F5361EFDDFF31108 /* ExpenseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F504AFA763954E96869E069 /* ExpenseViewModel.swift */; };
 		6223ED71DA38DAB04FE8000A /* TakeHomeCore.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = F63971585AB69A9C42023258 /* TakeHomeCore.xcframework */; };
 		62D027EBE71EACC67F29AD07 /* IncomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4158665A97A4E2A6DC1BB358 /* IncomeViewModel.swift */; };
 		646F3F63C37FEFA757B8063A /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74020D5EDF25BB9100FFF02A /* Expense.swift */; };
 		6E204E89B3413ED5CDC40525 /* FinancialProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50DF4B97391CB4AA02FCDB15 /* FinancialProfile.swift */; };
 		716C6CE76A8D4B80F9F4B3AB /* ScenarioViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 415E3C6FB44D7C43966780EA /* ScenarioViewModelTests.swift */; };
+		73E4DB679E49162C7700D36B /* Transaction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23B411A32DE229D1AEF413E3 /* Transaction.swift */; };
+		7BAB08017DD2A46967770AC4 /* DetailedDeductionsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A71A96CFD47562096C9ACC7A /* DetailedDeductionsStepView.swift */; };
 		82D9F07681C42644A3DEB47D /* RetirementCalculatorViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECDD947CCE75E60AF72F8DB /* RetirementCalculatorViewModel.swift */; };
+		83EA4E913A890E81997A1E32 /* DeductionSetupStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4410E9CD61829C6D794E18F /* DeductionSetupStepView.swift */; };
 		85676B476DB847D329ADA0D5 /* Income.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9662FFD8045E73881BEF14F4 /* Income.swift */; };
 		8C1A815661896D54D72307AD /* TakeHomeCoreWrapperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F259ED91C4196CFF889C97 /* TakeHomeCoreWrapperTests.swift */; };
+		94F18F3DAF2067262BE43F73 /* PartnerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A62752A4D061757EE117E13F /* PartnerProfile.swift */; };
 		9998EAC704A5311A1022D32F /* MockRepositories.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1E7750C73A765D19AEF448E /* MockRepositories.swift */; };
 		9D1780E3B2103BE42630FE7A /* ExpenseViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F18646A4368523F93B261FB /* ExpenseViewModelTests.swift */; };
+		9DCAD7F192A2BF47A36C5494 /* HouseholdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7FF9DC5C32A1E78080E3BD7A /* HouseholdType.swift */; };
 		9F37ABDD70314E088D958361 /* ExpensesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81848DFB45F0599D1B495CD7 /* ExpensesView.swift */; };
 		9F6DA3B977FE906DBFAAE11F /* takehome_core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF524D7AA5B987D0A9A0DD1 /* takehome_core.swift */; };
+		A5E83972861CE6706D7073AC /* SuperwallKit in Frameworks */ = {isa = PBXBuildFile; productRef = BEE2AB69AE37B394D18DCB6C /* SuperwallKit */; };
 		A8E515A027E1AB15BD57E22B /* DecimalConversions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 807910A72B6F20B93CEBF414 /* DecimalConversions.swift */; };
 		AE3DB3B3B9CB2B60B40B4685 /* OnboardingViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45E0E60C386D495156E92F5D /* OnboardingViewModelTests.swift */; };
+		B6E37A8F57B1A1BB6183F2E6 /* OnboardingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7833D545AE945825000838DE /* OnboardingContext.swift */; };
 		CD2DBE550929E1ADCB1EA001 /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA71CCB62F802933D488D99D /* Scenario.swift */; };
 		DAA5F4AA1EA661E0D81FB3DB /* RetirementCalculatorViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44A9F4D7C6E577145B97FB8C /* RetirementCalculatorViewModelTests.swift */; };
 		E1B42ACE80C531E1E244BE03 /* RustCoreIntegrationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C2BD88A7B82CF45C4431C2DB /* RustCoreIntegrationTests.swift */; };
+		E24DD66E7727D24F5BFFB0AE /* PartnerIncomeStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB78220219C78BD9C8839E7B /* PartnerIncomeStepView.swift */; };
 		E3504A9FB2E6E4D2495E1593 /* RepositoryProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42DC749BD7E1AB12C0989436 /* RepositoryProtocols.swift */; };
 		E518F7D29B2C0AEFD95AAC73 /* ScenariosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33608DDDAA22394316D15F5E /* ScenariosView.swift */; };
 		EC5C6A45B52E8BB43CE43B0C /* ScenarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AFCFC24E094FE1C4B843011 /* ScenarioViewModel.swift */; };
 		F9AB6E20E717BD648D9EEF0F /* RetirementCalculatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748E7D4D520ABD3DE01CC1A7 /* RetirementCalculatorView.swift */; };
-		BBD3B5FD10F94B1DAA037F95 /* DeductionEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6141ACFAD2C4B8D88AA97E9 /* DeductionEntry.swift */; };
-		7F19214FA34344818410B149 /* DeductionFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62B482EF36A74551BB42ED0C /* DeductionFrequency.swift */; };
-		82930F264BCA486180F09FD4 /* DeductionInputType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C261045D1CFB4823A93C4F6F /* DeductionInputType.swift */; };
-		03AC269D06F54F8D82443369 /* DeductionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBB882B0CEBC48EEA7B90EDB /* DeductionType.swift */; };
-		2619DB35ED9149A3A82FA5D0 /* HouseholdType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B18415447A844CE784DE8F9B /* HouseholdType.swift */; };
-		7D0DC1EE5BBD47EC90CACCA5 /* OnboardingContext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D64B94C9F214B858EF3A915 /* OnboardingContext.swift */; };
-		F03D23BB35AF4E9B8D835F8B /* PartnerProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CE1F1DE03D4752884DCC16 /* PartnerProfile.swift */; };
-		54D6BD6A1BC44223B4AC506F /* DeductionSetupStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE851AA6C7484BE0929F5396 /* DeductionSetupStepView.swift */; };
-		E1C7E005AEF04EC8AF2BDE68 /* DetailedDeductionsStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB8C67BC06A411198C3786D /* DetailedDeductionsStepView.swift */; };
-		26F59150C53B476995452E02 /* HouseholdTypeStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D453C4F77642A794CE996D /* HouseholdTypeStepView.swift */; };
-		623A106A42464731B6607589 /* PartnerIncomeStepView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D8AE5B2D4D245F192CCF89E /* PartnerIncomeStepView.swift */; };
+		FAC976A356D950C054E8C1B9 /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0096D2F371D80355641CE1 /* PrivacyPolicyView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,13 +81,14 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		94783C9A280D4E93A2616A39 /* LifeEventScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEventScenario.swift; sourceTree = "<group>"; };
-		A1B2C3D4E5F6789012345678 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		08C95B6C20ABA16A9CBF190E /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
+		0D0096D2F371D80355641CE1 /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
 		1BD9562E936BC1A685226F06 /* takehome_coreFFI.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = takehome_coreFFI.h; sourceTree = "<group>"; };
 		1ECDD947CCE75E60AF72F8DB /* RetirementCalculatorViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementCalculatorViewModel.swift; sourceTree = "<group>"; };
 		1EF524D7AA5B987D0A9A0DD1 /* takehome_core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = takehome_core.swift; sourceTree = "<group>"; };
+		1F3CA57E5C1CC65A68C62153 /* LifeEventScenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeEventScenario.swift; sourceTree = "<group>"; };
 		223307A34D1B2D0D5E99AB14 /* TakeHomeTests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TakeHomeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		23B411A32DE229D1AEF413E3 /* Transaction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transaction.swift; sourceTree = "<group>"; };
 		28451F6E1B8C414CF4488669 /* DashboardViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModelTests.swift; sourceTree = "<group>"; };
 		33608DDDAA22394316D15F5E /* ScenariosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenariosView.swift; sourceTree = "<group>"; };
 		3F504AFA763954E96869E069 /* ExpenseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseViewModel.swift; sourceTree = "<group>"; };
@@ -95,6 +98,7 @@
 		42DC749BD7E1AB12C0989436 /* RepositoryProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryProtocols.swift; sourceTree = "<group>"; };
 		44A9F4D7C6E577145B97FB8C /* RetirementCalculatorViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementCalculatorViewModelTests.swift; sourceTree = "<group>"; };
 		45E0E60C386D495156E92F5D /* OnboardingViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModelTests.swift; sourceTree = "<group>"; };
+		472F651CEFF31F464BDDC13E /* DeductionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionType.swift; sourceTree = "<group>"; };
 		4DD9DE7A430EE980195AEB23 /* TakeHomeUITests.xctest */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.cfbundle; path = TakeHomeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EF3D1335D0D582A496D44DB /* OnboardingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingUITests.swift; sourceTree = "<group>"; };
 		50DF4B97391CB4AA02FCDB15 /* FinancialProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialProfile.swift; sourceTree = "<group>"; };
@@ -109,35 +113,34 @@
 		748E7D4D520ABD3DE01CC1A7 /* RetirementCalculatorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RetirementCalculatorView.swift; sourceTree = "<group>"; };
 		75F259ED91C4196CFF889C97 /* TakeHomeCoreWrapperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeCoreWrapperTests.swift; sourceTree = "<group>"; };
 		771CB9DD8B97D478BDA2F9E5 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		7833D545AE945825000838DE /* OnboardingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContext.swift; sourceTree = "<group>"; };
 		7AFCFC24E094FE1C4B843011 /* ScenarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioViewModel.swift; sourceTree = "<group>"; };
+		7FF9DC5C32A1E78080E3BD7A /* HouseholdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdType.swift; sourceTree = "<group>"; };
 		807910A72B6F20B93CEBF414 /* DecimalConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalConversions.swift; sourceTree = "<group>"; };
 		81848DFB45F0599D1B495CD7 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		87C1A50E64D3496D17DD953E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		8D1051B6237880FA114A957E /* HouseholdTypeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdTypeStepView.swift; sourceTree = "<group>"; };
+		8D9862BB6F39117E205EC131 /* DeductionInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionInputType.swift; sourceTree = "<group>"; };
+		8E4EE489DAB7F8FC05127FA1 /* DeductionFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionFrequency.swift; sourceTree = "<group>"; };
 		9491F4CC9C31515FB978A583 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		9662FFD8045E73881BEF14F4 /* Income.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Income.swift; sourceTree = "<group>"; };
+		9F4CBF88098CCCA504BDF876 /* DeductionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionEntry.swift; sourceTree = "<group>"; };
+		A62752A4D061757EE117E13F /* PartnerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerProfile.swift; sourceTree = "<group>"; };
+		A71A96CFD47562096C9ACC7A /* DetailedDeductionsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedDeductionsStepView.swift; sourceTree = "<group>"; };
 		B10BF26AF1FAE0BCB4BB956F /* TakeHomeCoreWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeCoreWrapper.swift; sourceTree = "<group>"; };
 		B21439590C3E57D705B2E233 /* IncomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncomeView.swift; sourceTree = "<group>"; };
 		B598553B12BC0230816D00ED /* HouseholdViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdViewModel.swift; sourceTree = "<group>"; };
+		BB78220219C78BD9C8839E7B /* PartnerIncomeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerIncomeStepView.swift; sourceTree = "<group>"; };
 		C2BD88A7B82CF45C4431C2DB /* RustCoreIntegrationTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RustCoreIntegrationTests.swift; sourceTree = "<group>"; };
 		C3A05E85F1A2DD36687319E5 /* DependencyContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DependencyContainer.swift; sourceTree = "<group>"; };
 		C7A3341C44D8F8473C1D9123 /* TakeHome-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TakeHome-Bridging-Header.h"; sourceTree = "<group>"; };
 		D1E7750C73A765D19AEF448E /* MockRepositories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockRepositories.swift; sourceTree = "<group>"; };
 		DA71CCB62F802933D488D99D /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
+		E4410E9CD61829C6D794E18F /* DeductionSetupStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionSetupStepView.swift; sourceTree = "<group>"; };
 		ECCEC0FF2A915095453CC676 /* TakeHomeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TakeHomeApp.swift; sourceTree = "<group>"; };
 		F63971585AB69A9C42023258 /* TakeHomeCore.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; name = TakeHomeCore.xcframework; path = ../bindings/TakeHomeCore.xcframework; sourceTree = "<group>"; };
 		FD06CAFEBD39AF6B470B7F56 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		FDEFD9A1CED2EC5C2F293CB0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
-		E6141ACFAD2C4B8D88AA97E9 /* DeductionEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionEntry.swift; sourceTree = "<group>"; };
-		62B482EF36A74551BB42ED0C /* DeductionFrequency.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionFrequency.swift; sourceTree = "<group>"; };
-		C261045D1CFB4823A93C4F6F /* DeductionInputType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionInputType.swift; sourceTree = "<group>"; };
-		DBB882B0CEBC48EEA7B90EDB /* DeductionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionType.swift; sourceTree = "<group>"; };
-		B18415447A844CE784DE8F9B /* HouseholdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdType.swift; sourceTree = "<group>"; };
-		8D64B94C9F214B858EF3A915 /* OnboardingContext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingContext.swift; sourceTree = "<group>"; };
-		86CE1F1DE03D4752884DCC16 /* PartnerProfile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerProfile.swift; sourceTree = "<group>"; };
-		EE851AA6C7484BE0929F5396 /* DeductionSetupStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeductionSetupStepView.swift; sourceTree = "<group>"; };
-		6EB8C67BC06A411198C3786D /* DetailedDeductionsStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailedDeductionsStepView.swift; sourceTree = "<group>"; };
-		F3D453C4F77642A794CE996D /* HouseholdTypeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdTypeStepView.swift; sourceTree = "<group>"; };
-		6D8AE5B2D4D245F192CCF89E /* PartnerIncomeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartnerIncomeStepView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				6223ED71DA38DAB04FE8000A /* TakeHomeCore.xcframework in Frameworks */,
+				A5E83972861CE6706D7073AC /* SuperwallKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +171,7 @@
 		0B368D529FE9642025326F55 /* Settings */ = {
 			isa = PBXGroup;
 			children = (
+				0D0096D2F371D80355641CE1 /* PrivacyPolicyView.swift */,
 				771CB9DD8B97D478BDA2F9E5 /* SettingsView.swift */,
 			);
 			path = Settings;
@@ -214,19 +219,19 @@
 		34900411F9FBE3248AFC568F /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E6141ACFAD2C4B8D88AA97E9 /* DeductionEntry.swift */,
-				62B482EF36A74551BB42ED0C /* DeductionFrequency.swift */,
-				C261045D1CFB4823A93C4F6F /* DeductionInputType.swift */,
-				DBB882B0CEBC48EEA7B90EDB /* DeductionType.swift */,
-				B18415447A844CE784DE8F9B /* HouseholdType.swift */,
-				8D64B94C9F214B858EF3A915 /* OnboardingContext.swift */,
-				86CE1F1DE03D4752884DCC16 /* PartnerProfile.swift */,
+				9F4CBF88098CCCA504BDF876 /* DeductionEntry.swift */,
+				8E4EE489DAB7F8FC05127FA1 /* DeductionFrequency.swift */,
+				8D9862BB6F39117E205EC131 /* DeductionInputType.swift */,
+				472F651CEFF31F464BDDC13E /* DeductionType.swift */,
 				74020D5EDF25BB9100FFF02A /* Expense.swift */,
 				50DF4B97391CB4AA02FCDB15 /* FinancialProfile.swift */,
+				7FF9DC5C32A1E78080E3BD7A /* HouseholdType.swift */,
 				9662FFD8045E73881BEF14F4 /* Income.swift */,
+				1F3CA57E5C1CC65A68C62153 /* LifeEventScenario.swift */,
+				7833D545AE945825000838DE /* OnboardingContext.swift */,
+				A62752A4D061757EE117E13F /* PartnerProfile.swift */,
 				DA71CCB62F802933D488D99D /* Scenario.swift */,
-				94783C9A280D4E93A2616A39 /* LifeEventScenario.swift */,
-				A1B2C3D4E5F6789012345678 /* Transaction.swift */,
+				23B411A32DE229D1AEF413E3 /* Transaction.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -392,11 +397,11 @@
 		E50806B05CD1B011EB69B072 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
-				EE851AA6C7484BE0929F5396 /* DeductionSetupStepView.swift */,
-				6EB8C67BC06A411198C3786D /* DetailedDeductionsStepView.swift */,
-				F3D453C4F77642A794CE996D /* HouseholdTypeStepView.swift */,
-				6D8AE5B2D4D245F192CCF89E /* PartnerIncomeStepView.swift */,
+				E4410E9CD61829C6D794E18F /* DeductionSetupStepView.swift */,
+				A71A96CFD47562096C9ACC7A /* DetailedDeductionsStepView.swift */,
+				8D1051B6237880FA114A957E /* HouseholdTypeStepView.swift */,
 				9491F4CC9C31515FB978A583 /* OnboardingView.swift */,
+				BB78220219C78BD9C8839E7B /* PartnerIncomeStepView.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -462,6 +467,7 @@
 			);
 			name = TakeHome;
 			packageProductDependencies = (
+				BEE2AB69AE37B394D18DCB6C /* SuperwallKit */,
 			);
 			productName = TakeHome;
 			productReference = 64C87978B6D97F5D6B283961 /* TakeHome.app */;
@@ -491,6 +497,9 @@
 			);
 			mainGroup = DA04362AA16D6CD27E6EBCD1;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				380BCD6FFDF68258419FE45E /* XCRemoteSwiftPackageReference "Superwall-iOS" */,
+			);
 			preferredProjectObjectVersion = 77;
 			projectDirPath = "";
 			projectRoot = "";
@@ -538,45 +547,46 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BBD3B5FD10F94B1DAA037F95 /* DeductionEntry.swift in Sources */,
-				7F19214FA34344818410B149 /* DeductionFrequency.swift in Sources */,
-				82930F264BCA486180F09FD4 /* DeductionInputType.swift in Sources */,
-				03AC269D06F54F8D82443369 /* DeductionType.swift in Sources */,
-				2619DB35ED9149A3A82FA5D0 /* HouseholdType.swift in Sources */,
-				7D0DC1EE5BBD47EC90CACCA5 /* OnboardingContext.swift in Sources */,
-				F03D23BB35AF4E9B8D835F8B /* PartnerProfile.swift in Sources */,
-				54D6BD6A1BC44223B4AC506F /* DeductionSetupStepView.swift in Sources */,
-				E1C7E005AEF04EC8AF2BDE68 /* DetailedDeductionsStepView.swift in Sources */,
-				26F59150C53B476995452E02 /* HouseholdTypeStepView.swift in Sources */,
-				623A106A42464731B6607589 /* PartnerIncomeStepView.swift in Sources */,
 				107E89BAC542F73CBA3F5E43 /* BaseViewModel.swift in Sources */,
 				395154B27A9C4913C675401F /* DashboardView.swift in Sources */,
 				32357C9FC26DF397E595F74F /* DashboardViewModel.swift in Sources */,
 				A8E515A027E1AB15BD57E22B /* DecimalConversions.swift in Sources */,
+				5FF0B46918CB7956CB5CF0F8 /* DeductionEntry.swift in Sources */,
+				33DEC9A94EF96186D790E6AB /* DeductionFrequency.swift in Sources */,
+				07EA51AC1090916BE621568F /* DeductionInputType.swift in Sources */,
+				83EA4E913A890E81997A1E32 /* DeductionSetupStepView.swift in Sources */,
+				100AAAF1D4EC5557470C97ED /* DeductionType.swift in Sources */,
 				2AA651F810A9CC6C1A4B686E /* DependencyContainer.swift in Sources */,
+				7BAB08017DD2A46967770AC4 /* DetailedDeductionsStepView.swift in Sources */,
 				646F3F63C37FEFA757B8063A /* Expense.swift in Sources */,
 				61A26C17F5361EFDDFF31108 /* ExpenseViewModel.swift in Sources */,
 				9F37ABDD70314E088D958361 /* ExpensesView.swift in Sources */,
 				6E204E89B3413ED5CDC40525 /* FinancialProfile.swift in Sources */,
+				9DCAD7F192A2BF47A36C5494 /* HouseholdType.swift in Sources */,
+				5F11C7C910B42740118DB35E /* HouseholdTypeStepView.swift in Sources */,
 				546893391651699B801CC9AB /* HouseholdView.swift in Sources */,
 				18414F95A3BD3FB2BEF2826D /* HouseholdViewModel.swift in Sources */,
 				85676B476DB847D329ADA0D5 /* Income.swift in Sources */,
 				4EA9BA94B5F20A106741CD8E /* IncomeView.swift in Sources */,
 				62D027EBE71EACC67F29AD07 /* IncomeViewModel.swift in Sources */,
+				1D42CCE51802ABC77B2ECCEF /* LifeEventScenario.swift in Sources */,
 				4E0998169F55C6ADA68DCDD9 /* MainTabView.swift in Sources */,
+				B6E37A8F57B1A1BB6183F2E6 /* OnboardingContext.swift in Sources */,
 				5C0258718A76984FA06A052D /* OnboardingView.swift in Sources */,
 				450284D8078E09D042D81715 /* OnboardingViewModel.swift in Sources */,
+				E24DD66E7727D24F5BFFB0AE /* PartnerIncomeStepView.swift in Sources */,
+				94F18F3DAF2067262BE43F73 /* PartnerProfile.swift in Sources */,
+				FAC976A356D950C054E8C1B9 /* PrivacyPolicyView.swift in Sources */,
 				E3504A9FB2E6E4D2495E1593 /* RepositoryProtocols.swift in Sources */,
 				F9AB6E20E717BD648D9EEF0F /* RetirementCalculatorView.swift in Sources */,
 				82D9F07681C42644A3DEB47D /* RetirementCalculatorViewModel.swift in Sources */,
 				CD2DBE550929E1ADCB1EA001 /* Scenario.swift in Sources */,
-				0C50B36DA51B4CFBB856F560 /* LifeEventScenario.swift in Sources */,
-				B2C3D4E5F67890123456789A /* Transaction.swift in Sources */,
 				EC5C6A45B52E8BB43CE43B0C /* ScenarioViewModel.swift in Sources */,
 				E518F7D29B2C0AEFD95AAC73 /* ScenariosView.swift in Sources */,
 				0462D16B78E3D1488C25AFA1 /* SettingsView.swift in Sources */,
 				158A575CECD0B03BD426F7E7 /* TakeHomeApp.swift in Sources */,
 				21B09BF2A282979965C9FFB4 /* TakeHomeCoreWrapper.swift in Sources */,
+				73E4DB679E49162C7700D36B /* Transaction.swift in Sources */,
 				9F6DA3B977FE906DBFAAE11F /* takehome_core.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -710,10 +720,6 @@
 					"\"../bindings\"",
 				);
 				GENERATE_INFOPLIST_FILE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					../bindings/swift,
-				);
 				INFOPLIST_FILE = TakeHome/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -729,7 +735,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.takehome.app;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "TakeHome/Core/TakeHome-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -781,10 +786,6 @@
 					"\"../bindings\"",
 				);
 				GENERATE_INFOPLIST_FILE = NO;
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					../bindings/swift,
-				);
 				INFOPLIST_FILE = TakeHome/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -800,7 +801,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.takehome.app;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "TakeHome/Core/TakeHome-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -937,6 +937,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		380BCD6FFDF68258419FE45E /* XCRemoteSwiftPackageReference "Superwall-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/superwall/Superwall-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		BEE2AB69AE37B394D18DCB6C /* SuperwallKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 380BCD6FFDF68258419FE45E /* XCRemoteSwiftPackageReference "Superwall-iOS" */;
+			productName = SuperwallKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DD401AD330219D2C288D5610 /* Project object */;
 }

@@ -358,6 +358,15 @@ struct ScenarioComparisonView: View {
                         ComparisonCard(title: scenario.name, result: comparison.scenario, isScenario: true)
                     }
                     .padding(.horizontal)
+
+                    // Tax year disclaimer
+                    HStack(spacing: 4) {
+                        Image(systemName: "info.circle")
+                        Text("Based on 2024 tax rates. Estimates only.")
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                    .padding(.horizontal)
                 }
                 .padding(.vertical)
             }
@@ -1344,6 +1353,10 @@ struct QuickCompareView: View {
                     .font(.system(size: 48, weight: .bold, design: .rounded))
                     .foregroundColor(.secondary)
             }
+
+            Text("Based on 2024 tax rates")
+                .font(.caption2)
+                .foregroundColor(.secondary)
         }
         .padding(24)
         .frame(maxWidth: .infinity)
@@ -1508,6 +1521,8 @@ struct StateCompareView: View {
                         }
                     } header: {
                         Text("All States Ranked by Take-Home")
+                    } footer: {
+                        Text("Based on 2024 tax rates. Estimates only.")
                     }
                 }
             }

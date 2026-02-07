@@ -675,6 +675,10 @@ struct RevealStepView: View {
     let result: TaxCalculationResult?
     let isAnimating: Bool
 
+    @State private var displayedAmount: Double = 0
+    @State private var showDetails = false
+    private let animationDuration: Double = 1.5
+
     var body: some View {
         VStack(spacing: 32) {
             Spacer()
@@ -696,57 +700,107 @@ struct RevealStepView: View {
                         .font(.title3)
                         .foregroundColor(.secondary)
 
-                    Text(formatCurrency(result.netAnnual))
+                    Text(formatCurrency(Decimal(displayedAmount)))
                         .font(.system(size: 48, weight: .bold, design: .rounded))
                         .foregroundColor(.green)
+                        .contentTransition(.numericText(value: displayedAmount))
 
                     Text("per year")
                         .font(.subheadline)
                         .foregroundColor(.secondary)
                 }
 
-                HStack(spacing: 32) {
-                    VStack {
-                        Text(formatCurrency(result.netMonthly))
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        Text("Monthly")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
+                if showDetails {
+                    HStack(spacing: 32) {
+                        VStack {
+                            Text(formatCurrency(result.netMonthly))
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                            Text("Monthly")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
 
-                    VStack {
-                        Text(formatCurrency(result.netBiWeekly))
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        Text("Bi-Weekly")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
-                    }
+                        VStack {
+                            Text(formatCurrency(result.netBiWeekly))
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                            Text("Bi-Weekly")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
 
-                    VStack {
-                        Text(formatCurrency(result.netHourly))
-                            .font(.title2)
-                            .fontWeight(.semibold)
-                        Text("Hourly")
-                            .font(.caption)
-                            .foregroundColor(.secondary)
+                        VStack {
+                            Text(formatCurrency(result.netHourly))
+                                .font(.title2)
+                                .fontWeight(.semibold)
+                            Text("Hourly")
+                                .font(.caption)
+                                .foregroundColor(.secondary)
+                        }
                     }
+                    .padding()
+                    .transition(.opacity.combined(with: .move(edge: .bottom)))
+
+                    VStack(spacing: 4) {
+                        Text("Total Taxes: \(formatCurrency(result.totalTaxes))")
+                            .font(.subheadline)
+                        Text("Effective Rate: \(formatPercentage(result.totalEffectiveRate))")
+                            .font(.subheadline)
+                    }
+                    .foregroundColor(.secondary)
+                    .transition(.opacity)
+
+                    // Tax year disclaimer
+                    HStack(spacing: 4) {
+                        Image(systemName: "info.circle")
+                        Text("Tax rates as of 2024. Estimates only — consult a tax professional.")
+                    }
+                    .font(.caption2)
+                    .foregroundColor(.secondary)
+                    .padding(.top, 4)
+                    .transition(.opacity)
                 }
-                .padding()
-
-                VStack(spacing: 4) {
-                    Text("Total Taxes: \(formatCurrency(result.totalTaxes))")
-                        .font(.subheadline)
-                    Text("Effective Rate: \(formatPercentage(result.totalEffectiveRate))")
-                        .font(.subheadline)
-                }
-                .foregroundColor(.secondary)
             }
 
             Spacer()
         }
         .padding()
+        .onChange(of: result?.netAnnual) { _, newValue in
+            guard let target = newValue else { return }
+            startRevealAnimation(target: NSDecimalNumber(decimal: target).doubleValue)
+        }
+        .onAppear {
+            if let target = result?.netAnnual, displayedAmount == 0 {
+                startRevealAnimation(target: NSDecimalNumber(decimal: target).doubleValue)
+            }
+        }
+    }
+
+    private func startRevealAnimation(target: Double) {
+        // Fire haptic feedback
+        let heavyImpact = UIImpactFeedbackGenerator(style: .heavy)
+        heavyImpact.prepare()
+
+        displayedAmount = 0
+        showDetails = false
+
+        withAnimation(.easeOut(duration: animationDuration)) {
+            displayedAmount = target
+        }
+
+        // Fire haptic at the midpoint and end
+        DispatchQueue.main.asyncAfter(deadline: .now() + animationDuration * 0.5) {
+            UIImpactFeedbackGenerator(style: .medium).impactOccurred()
+        }
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + animationDuration) {
+            heavyImpact.impactOccurred()
+
+            withAnimation(.easeOut(duration: 0.4)) {
+                showDetails = true
+            }
+        }
     }
 
     private func formatCurrency(_ value: Decimal) -> String {
