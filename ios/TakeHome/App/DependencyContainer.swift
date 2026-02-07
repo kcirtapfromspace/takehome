@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import SuperwallKit
 
 /// Central dependency container for the app
 /// Provides access to shared services and manages app-wide state
@@ -7,6 +8,14 @@ import Combine
 final class DependencyContainer: ObservableObject {
     // MARK: - Published State
     @Published private(set) var hasCompletedOnboarding: Bool
+
+    /// Whether the user has an active Superwall subscription
+    var isSubscribed: Bool {
+        if case .active = Superwall.shared.subscriptionStatus {
+            return true
+        }
+        return false
+    }
 
     // MARK: - Core Services
     let taxCore: TakeHomeCoreProtocol

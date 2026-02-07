@@ -1,4 +1,5 @@
 import SwiftUI
+import SuperwallKit
 
 struct MainTabView: View {
     @EnvironmentObject private var container: DependencyContainer
@@ -41,6 +42,17 @@ struct MainTabView: View {
                     Label("Profile", systemImage: "person.circle.fill")
                 }
                 .tag(Tab.settings)
+        }
+        .onChange(of: selectedTab) { _, newTab in
+            guard !container.isSubscribed else { return }
+            switch newTab {
+            case .scenarios:
+                Superwall.shared.register(placement: "scenario_feature_gate")
+            case .household:
+                Superwall.shared.register(placement: "household_feature_gate")
+            default:
+                break
+            }
         }
     }
 

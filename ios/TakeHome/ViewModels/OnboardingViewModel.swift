@@ -1,5 +1,6 @@
 import Foundation
 import Combine
+import SuperwallKit
 
 // MARK: - Onboarding Step
 enum OnboardingStep: Int, CaseIterable, Identifiable {
@@ -312,6 +313,8 @@ final class OnboardingViewModel: BaseViewModel {
             return
         case .reveal:
             await saveProfile()
+            // Trigger paywall after first calculation reveal
+            Superwall.shared.register(placement: "first_calculation_complete")
             advanceToNextVisibleStep(from: currentStep, context: context, steps: allSteps)
             return
         case .complete:

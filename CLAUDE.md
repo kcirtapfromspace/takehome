@@ -83,3 +83,62 @@ Phase 1 MVP features (in priority order):
 - All calculations must work offline (no network dependency)
 - Decimal precision required for all financial calculations
 - Accessibility (VoiceOver, Dynamic Type) required from day 1
+
+---
+
+## Go-Live Guidelines
+
+### Release Readiness: ~70% Technical, ~30% Release Ready
+
+**What's Ship-Quality:**
+- Rust tax engine: ALL 50 states + DC, federal, FICA, progressive brackets
+- 53 passing tests with benchmarks
+- UniFFI Swift bindings + XCFramework (TakeHomeCore.xcframework) built
+- 27 SwiftUI views with MVVM architecture
+- Onboarding flow, dashboard (6 timeframes), household mode, scenario planner, expense management
+- Core Data local persistence
+
+### Must-Fix Before Release
+
+1. **Superwall Paywall (CRITICAL — not integrated at all)**
+   - Add Superwall SDK via SPM
+   - Initialize in TakeHomeApp.swift
+   - Gate after first calculation result (user sees value → paywall)
+   - Configure products in App Store Connect: $6.99/mo or $39.99/yr
+   - Primary placement: `first_calculation_complete`
+
+2. **Code Signing** — Dev certs only, need production certs + provisioning profiles
+
+3. **ViewModel Wiring** — Test full onboarding → dashboard flow end-to-end; some views may not be connected
+
+4. **Tax Year Disclaimer** — Data is 2024 rates, add "Rates as of 2024" prominently
+
+5. **App Icon** — None exists, need 1024x1024
+
+6. **Screenshots** — Key shots: multi-timeframe view, household mode, scenario planner
+
+7. **App Store Metadata:**
+   - Name: "TakeHome — Salary After Tax Calculator"
+   - Subtitle: "See Your Real Pay in 6 Timeframes"
+   - Keywords: "take home pay calculator", "salary after tax", "paycheck calculator", "net pay calculator", "income tax calculator", "salary calculator [state]"
+   - Category: Finance
+
+8. **Privacy Policy** — Required even for local-only data (use template generator)
+
+### Nice-to-Have (Post-Launch)
+- Fastlane build/deploy automation
+- CI/CD workflows (GitHub Actions)
+- CloudKit sync
+- WASM web calculator (for SEO landing pages)
+
+### Distribution Strategy
+- **Primary channel:** ASO — evergreen financial keywords with massive search volume
+- **Secondary:** Reddit (r/personalfinance 18M+, r/cscareerquestions, r/financialindependence)
+- **Tertiary:** State-specific SEO landing pages (50 states × WASM calculator)
+- **Timing:** Tax season (Jan-Apr) and job switch season (Jan, Sep) are peak
+- **Onboarding → hard paywall** after showing first calculation result
+
+### No-Go Items
+- Do NOT add social features or sharing
+- Do NOT connect to any external APIs — all calculations must be offline
+- Do NOT store any PII beyond what's needed for calculations (local only)
