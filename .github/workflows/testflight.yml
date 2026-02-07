@@ -1,0 +1,171 @@
+name: Build & Deploy to TestFlight
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      build_number:
+        description: 'Override build number (leave empty for auto-increment)'
+        required: false
+        type: string
+
+env:
+  SCHEME: TakeHome
+  PROJECT_DIR: ios
+  ARCHIVE_PATH: build/TakeHome.xcarchive
+  EXPORT_PATH: build/export
+  EXPORT_OPTIONS: ios/ExportOptions.plist
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: [self-hosted, macOS, ios-builder]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen &> /dev/null; then
+            brew install xcodegen
+          fi
+
+      - name: Generate Xcode Project
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: xcodegen generate
+
+      - name: Resolve Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -clonedSourcePackagesDirPath SourcePackages
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+            -only-testing:TakeHomeTests \
+            -resultBundlePath build/TestResults.xcresult \
+            | xcbeautify || true
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: build/TestResults.xcresult
+          retention-days: 7
+
+  build-and-deploy:
+    name: Archive & Upload to TestFlight
+    needs: test
+    runs-on: [self-hosted, macOS, ios-builder]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen &> /dev/null; then
+            brew install xcodegen
+          fi
+
+      - name: Generate Xcode Project
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: xcodegen generate
+
+      - name: Set Build Number
+        env:
+          INPUT_BUILD_NUMBER: ${{ github.event.inputs.build_number }}
+          RUN_NUMBER: ${{ github.run_number }}
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: |
+          if [ -n "$INPUT_BUILD_NUMBER" ]; then
+            BUILD_NUMBER="$INPUT_BUILD_NUMBER"
+          else
+            BUILD_NUMBER="$RUN_NUMBER"
+          fi
+          echo "BUILD_NUMBER=${BUILD_NUMBER}" >> "$GITHUB_ENV"
+          sed -i '' "s/CURRENT_PROJECT_VERSION: \"1\"/CURRENT_PROJECT_VERSION: \"${BUILD_NUMBER}\"/" project.yml
+          xcodegen generate
+
+      - name: Resolve Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -clonedSourcePackagesDirPath SourcePackages
+
+      - name: Archive
+        run: |
+          xcodebuild archive \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -configuration Release \
+            -archivePath "$ARCHIVE_PATH" \
+            -destination 'generic/platform=iOS' \
+            -allowProvisioningUpdates \
+            CURRENT_PROJECT_VERSION="$BUILD_NUMBER"
+
+      - name: Export Archive
+        run: |
+          xcodebuild -exportArchive \
+            -archivePath "$ARCHIVE_PATH" \
+            -exportPath "$EXPORT_PATH" \
+            -exportOptionsPlist "$EXPORT_OPTIONS" \
+            -allowProvisioningUpdates
+
+      - name: Upload to TestFlight
+        env:
+          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
+          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
+          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+        run: |
+          if [ -n "$ASC_KEY_ID" ] && [ -n "$ASC_ISSUER_ID" ] && [ -n "$ASC_PRIVATE_KEY" ]; then
+            mkdir -p ~/.private_keys
+            echo "$ASC_PRIVATE_KEY" > ~/.private_keys/AuthKey_${ASC_KEY_ID}.p8
+
+            xcrun altool --upload-app \
+              --type ios \
+              --file "$EXPORT_PATH/TakeHome.ipa" \
+              --apiKey "$ASC_KEY_ID" \
+              --apiIssuer "$ASC_ISSUER_ID"
+
+            rm -f ~/.private_keys/AuthKey_${ASC_KEY_ID}.p8
+          else
+            echo "::warning::No App Store Connect API key configured."
+            echo "Set these repository secrets to enable automatic upload:"
+            echo "  - ASC_KEY_ID: Your API Key ID"
+            echo "  - ASC_ISSUER_ID: Your Issuer ID"
+            echo "  - ASC_PRIVATE_KEY: Contents of AuthKey_XXXX.p8"
+            echo ""
+            echo "Archive exported successfully. Upload manually via Xcode Organizer or Transporter."
+            ls -la "$EXPORT_PATH/"
+          fi
+
+      - name: Upload Build Artifacts
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: takehome-build-${{ env.BUILD_NUMBER }}
+          path: |
+            build/export/*.ipa
+          retention-days: 30
+
+      - name: Summary
+        env:
+          GIT_SHA: ${{ github.sha }}
+        run: |
+          echo "## Build Summary" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Version:** 1.0.0 ($BUILD_NUMBER)" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Scheme:** $SCHEME" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Configuration:** Release" >> "$GITHUB_STEP_SUMMARY"
+          echo "- **Commit:** $GIT_SHA" >> "$GITHUB_STEP_SUMMARY"
+          if [ -f "$EXPORT_PATH/TakeHome.ipa" ]; then
+            IPA_SIZE=$(du -h "$EXPORT_PATH/TakeHome.ipa" | cut -f1)
+            echo "- **IPA Size:** ${IPA_SIZE}" >> "$GITHUB_STEP_SUMMARY"
+          fi

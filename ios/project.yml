@@ -61,14 +61,18 @@ targets:
           - $(inherited)
       configs:
         Debug:
-          CODE_SIGN_IDENTITY: ""
-          CODE_SIGNING_REQUIRED: "NO"
-          CODE_SIGNING_ALLOWED: "NO"
+          CODE_SIGN_IDENTITY: "Apple Development"
+          CODE_SIGNING_REQUIRED: "YES"
+          CODE_SIGNING_ALLOWED: "YES"
+          DEVELOPMENT_TEAM: "67C7724279"
+          CODE_SIGN_STYLE: "Automatic"
           SWIFT_OPTIMIZATION_LEVEL: "-Onone"
         Release:
-          CODE_SIGN_IDENTITY: ""
-          CODE_SIGNING_REQUIRED: "NO"
-          CODE_SIGNING_ALLOWED: "NO"
+          CODE_SIGN_IDENTITY: "Apple Development"
+          CODE_SIGNING_REQUIRED: "YES"
+          CODE_SIGNING_ALLOWED: "YES"
+          DEVELOPMENT_TEAM: "67C7724279"
+          CODE_SIGN_STYLE: "Automatic"
           SWIFT_OPTIMIZATION_LEVEL: "-O"
     preBuildScripts:
       - name: "Copy FFI Bindings"

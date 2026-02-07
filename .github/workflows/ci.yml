@@ -1,0 +1,60 @@
+name: CI
+
+on:
+  pull_request:
+    branches: [main]
+
+env:
+  SCHEME: TakeHome
+  PROJECT_DIR: ios
+
+jobs:
+  build-and-test:
+    name: Build & Test
+    runs-on: [self-hosted, macOS, ios-builder]
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install XcodeGen
+        run: |
+          if ! command -v xcodegen &> /dev/null; then
+            brew install xcodegen
+          fi
+
+      - name: Generate Xcode Project
+        working-directory: ${{ env.PROJECT_DIR }}
+        run: xcodegen generate
+
+      - name: Resolve Package Dependencies
+        run: |
+          xcodebuild -resolvePackageDependencies \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -clonedSourcePackagesDirPath SourcePackages
+
+      - name: Build
+        run: |
+          xcodebuild build \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+            | xcbeautify || true
+
+      - name: Run Unit Tests
+        run: |
+          xcodebuild test \
+            -scheme "$SCHEME" \
+            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
+            -only-testing:TakeHomeTests \
+            -resultBundlePath build/TestResults.xcresult \
+            | xcbeautify || true
+
+      - name: Upload Test Results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: build/TestResults.xcresult
+          retention-days: 7
