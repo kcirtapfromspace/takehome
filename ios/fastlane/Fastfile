@@ -1,0 +1,95 @@
+default_platform(:ios)
+
+platform :ios do
+  before_all do
+    if ENV["APP_STORE_CONNECT_API_KEY_ID"] && ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"]
+      app_store_connect_api_key(
+        key_id: ENV["APP_STORE_CONNECT_API_KEY_ID"],
+        issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
+        key_filepath: ENV["APP_STORE_CONNECT_API_KEY_KEY_FILEPATH"] || "./fastlane/AuthKey.p8",
+        in_house: false
+      )
+    end
+  end
+
+  desc "Push a new beta build to TestFlight (manual signing for CI)"
+  lane :beta_manual do |options|
+    increment_build_number(
+      build_number: options[:build_number] || Time.now.strftime("%Y%m%d%H%M")
+    )
+
+    build_options = {
+      scheme: "TakeHome",
+      configuration: "Release",
+      export_method: "app-store",
+      derived_data_path: "./build/DerivedData",
+      xcargs: "-parallelizeTargets -jobs #{`sysctl -n hw.ncpu`.strip}"
+    }
+
+    if ENV["APPLE_PROVISIONING_PROFILE_NAME"] || ENV["APPLE_PROVISIONING_PROFILE_UUID"]
+      team_id = ENV["APPLE_TEAM_ID"]
+      profile_name = ENV["APPLE_PROVISIONING_PROFILE_NAME"]
+      profile_uuid = ENV["APPLE_PROVISIONING_PROFILE_UUID"]
+
+      signing_opts = {
+        use_automatic_signing: false,
+        path: "TakeHome.xcodeproj",
+        team_id: team_id,
+        code_sign_identity: "Apple Distribution",
+        targets: ["TakeHome"],
+        build_configurations: ["Release"]
+      }
+
+      if profile_uuid
+        signing_opts[:profile_uuid] = profile_uuid
+      elsif profile_name
+        signing_opts[:profile_name] = profile_name
+      end
+      update_code_signing_settings(signing_opts)
+
+      build_options[:xcargs] = "#{build_options[:xcargs]} DEVELOPMENT_TEAM=#{team_id}"
+      build_options[:export_options] = {
+        teamID: team_id,
+        signingStyle: "manual",
+        signingCertificate: "Apple Distribution",
+        provisioningProfiles: {
+          "com.takehome.app" => profile_name || profile_uuid
+        }
+      }
+    else
+      build_options[:xcargs] = "#{build_options[:xcargs]} -allowProvisioningUpdates"
+    end
+
+    build_app(build_options)
+
+    groups = options[:groups] ? options[:groups].split(",").map(&:strip) : nil
+
+    upload_to_testflight(
+      skip_waiting_for_build_processing: groups.nil?,
+      distribute_external: !groups.nil?,
+      groups: groups,
+      changelog: options[:changelog] || "Bug fixes and improvements"
+    )
+
+    clean_build_artifacts
+
+    if groups
+      UI.success("Build uploaded and distributed to: #{groups.join(', ')}")
+    else
+      UI.success("Build uploaded to TestFlight!")
+    end
+  end
+
+  desc "Run unit tests"
+  lane :test do
+    run_tests(
+      scheme: "TakeHome",
+      device: "iPhone 17 Pro",
+      clean: true
+    )
+  end
+
+  error do |lane, exception|
+    UI.error("Lane #{lane} failed with error: #{exception.message}")
+  end
+end
