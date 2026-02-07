@@ -1,0 +1,6 @@
+app_identifier("com.takehome.app")
+
+# App Store Connect API configured via environment variables in CI:
+# - APP_STORE_CONNECT_API_KEY_ID
+# - APP_STORE_CONNECT_ISSUER_ID
+# - APP_STORE_CONNECT_API_KEY_KEY_FILEPATH

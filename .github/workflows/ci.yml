@@ -3,6 +3,10 @@ name: CI
 on:
   pull_request:
     branches: [main]
+    paths:
+      - 'ios/**'
+      - 'bindings/**'
+      - '.github/workflows/ci.yml'
 
 env:
   SCHEME: TakeHome
@@ -12,9 +16,12 @@ jobs:
   build-and-test:
     name: Build & Test
     runs-on: [self-hosted, macOS, ios-builder]
+    defaults:
+      run:
+        working-directory: ios
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install XcodeGen
         run: |
@@ -23,38 +30,37 @@ jobs:
           fi
 
       - name: Generate Xcode Project
-        working-directory: ${{ env.PROJECT_DIR }}
         run: xcodegen generate
-
-      - name: Resolve Package Dependencies
-        run: |
-          xcodebuild -resolvePackageDependencies \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
-            -clonedSourcePackagesDirPath SourcePackages
 
       - name: Build
         run: |
           xcodebuild build \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -project TakeHome.xcodeproj \
+            -scheme $SCHEME \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
-            | xcbeautify || true
+            -configuration Debug \
+            -parallelizeTargets \
+            -jobs $(sysctl -n hw.ncpu) \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            2>&1 | tee build.log
 
       - name: Run Unit Tests
         run: |
           xcodebuild test \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+            -project TakeHome.xcodeproj \
+            -scheme $SCHEME \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
             -only-testing:TakeHomeTests \
             -resultBundlePath build/TestResults.xcresult \
-            | xcbeautify || true
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            2>&1 | tee test.log
 
       - name: Upload Test Results
         if: always()
         uses: actions/upload-artifact@v4
         with:
           name: test-results
-          path: build/TestResults.xcresult
+          path: ios/build/TestResults.xcresult
           retention-days: 7

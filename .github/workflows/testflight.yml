@@ -3,27 +3,34 @@ name: Build & Deploy to TestFlight
 on:
   push:
     branches: [main]
+    paths:
+      - 'ios/**'
+      - 'bindings/**'
+      - '.github/workflows/testflight.yml'
   workflow_dispatch:
     inputs:
-      build_number:
-        description: 'Override build number (leave empty for auto-increment)'
+      deploy_testflight:
+        description: 'Deploy to TestFlight'
         required: false
-        type: string
+        default: false
+        type: boolean
 
 env:
   SCHEME: TakeHome
   PROJECT_DIR: ios
-  ARCHIVE_PATH: build/TakeHome.xcarchive
-  EXPORT_PATH: build/export
-  EXPORT_OPTIONS: ios/ExportOptions.plist
+  BUNDLE_ID: com.takehome.app
 
 jobs:
-  test:
-    name: Run Tests
+  build:
+    name: Build & Test
     runs-on: [self-hosted, macOS, ios-builder]
+    if: github.event_name == 'pull_request'
+    defaults:
+      run:
+        working-directory: ios
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install XcodeGen
         run: |
@@ -32,41 +39,31 @@ jobs:
           fi
 
       - name: Generate Xcode Project
-        working-directory: ${{ env.PROJECT_DIR }}
         run: xcodegen generate
 
-      - name: Resolve Package Dependencies
+      - name: Build for testing
         run: |
-          xcodebuild -resolvePackageDependencies \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
-            -clonedSourcePackagesDirPath SourcePackages
-
-      - name: Run Unit Tests
-        run: |
-          xcodebuild test \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
+          xcodebuild build \
+            -project TakeHome.xcodeproj \
+            -scheme $SCHEME \
             -destination 'platform=iOS Simulator,name=iPhone 17 Pro' \
-            -only-testing:TakeHomeTests \
-            -resultBundlePath build/TestResults.xcresult \
-            | xcbeautify || true
+            -configuration Debug \
+            -parallelizeTargets \
+            -jobs $(sysctl -n hw.ncpu) \
+            CODE_SIGN_IDENTITY="" \
+            CODE_SIGNING_REQUIRED=NO \
+            2>&1 | tee build.log
 
-      - name: Upload Test Results
-        if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: test-results
-          path: build/TestResults.xcresult
-          retention-days: 7
-
-  build-and-deploy:
-    name: Archive & Upload to TestFlight
-    needs: test
+  deploy-testflight:
+    name: Deploy to TestFlight
     runs-on: [self-hosted, macOS, ios-builder]
+    if: (github.event_name == 'push' && github.ref == 'refs/heads/main') || (github.event_name == 'workflow_dispatch' && inputs.deploy_testflight)
+    defaults:
+      run:
+        working-directory: ios
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
 
       - name: Install XcodeGen
         run: |
@@ -75,122 +72,79 @@ jobs:
           fi
 
       - name: Generate Xcode Project
-        working-directory: ${{ env.PROJECT_DIR }}
         run: xcodegen generate
 
-      - name: Set Build Number
+      - name: Setup Ruby
+        run: |
+          export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+          bundle install
+
+      - name: Create App Store Connect API Key
         env:
-          INPUT_BUILD_NUMBER: ${{ github.event.inputs.build_number }}
-          RUN_NUMBER: ${{ github.run_number }}
-        working-directory: ${{ env.PROJECT_DIR }}
+          API_KEY_BASE64: ${{ secrets.APP_STORE_CONNECT_API_KEY_BASE64 }}
         run: |
-          if [ -n "$INPUT_BUILD_NUMBER" ]; then
-            BUILD_NUMBER="$INPUT_BUILD_NUMBER"
-          else
-            BUILD_NUMBER="$RUN_NUMBER"
-          fi
-          echo "BUILD_NUMBER=${BUILD_NUMBER}" >> "$GITHUB_ENV"
-          sed -i '' "s/CURRENT_PROJECT_VERSION: \"1\"/CURRENT_PROJECT_VERSION: \"${BUILD_NUMBER}\"/" project.yml
-          xcodegen generate
+          mkdir -p fastlane
+          echo -n "$API_KEY_BASE64" | base64 --decode > fastlane/AuthKey.p8
+          chmod 600 fastlane/AuthKey.p8
 
-      - name: Resolve Package Dependencies
-        run: |
-          xcodebuild -resolvePackageDependencies \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
-            -clonedSourcePackagesDirPath SourcePackages
-
-      - name: Unlock Keychain
+      - name: Install signing certificate
         env:
-          KEYCHAIN_PASSWORD: ${{ secrets.KEYCHAIN_PASSWORD }}
+          BUILD_CERTIFICATE_BASE64: ${{ secrets.APPLE_CERTIFICATE_BASE64 }}
+          P12_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
+          KEYCHAIN_PASSWORD: ${{ secrets.APPLE_CERTIFICATE_PASSWORD }}
         run: |
-          if [ -n "$KEYCHAIN_PASSWORD" ]; then
-            security unlock-keychain -p "$KEYCHAIN_PASSWORD" ~/Library/Keychains/login.keychain-db
-            security set-keychain-settings -t 3600 -l ~/Library/Keychains/login.keychain-db
-          else
-            echo "::warning::KEYCHAIN_PASSWORD secret not set. Signing may fail if keychain is locked."
-          fi
+          CERTIFICATE_PATH=$RUNNER_TEMP/build_certificate.p12
+          KEYCHAIN_PATH=$RUNNER_TEMP/app-signing.keychain-db
 
-      - name: Clean Build Directory
-        run: rm -rf build/
+          echo -n "$BUILD_CERTIFICATE_BASE64" | base64 --decode -o $CERTIFICATE_PATH
 
-      - name: Archive
-        run: |
-          set -o pipefail
-          mkdir -p build
-          xcodebuild archive \
-            -scheme "$SCHEME" \
-            -project "$PROJECT_DIR/TakeHome.xcodeproj" \
-            -configuration Release \
-            -archivePath "$ARCHIVE_PATH" \
-            -destination 'generic/platform=iOS' \
-            -allowProvisioningUpdates \
-            CURRENT_PROJECT_VERSION="$BUILD_NUMBER" \
-            2>&1 | tee build/archive.log
+          security create-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security set-keychain-settings -lut 21600 $KEYCHAIN_PATH
+          security unlock-keychain -p "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
 
-      - name: Upload Archive Log on Failure
-        if: failure()
-        uses: actions/upload-artifact@v4
-        with:
-          name: archive-log
-          path: build/archive.log
-          retention-days: 7
+          security import $CERTIFICATE_PATH -P "$P12_PASSWORD" -A -t cert -f pkcs12 -k $KEYCHAIN_PATH
+          security set-key-partition-list -S apple-tool:,apple: -k "$KEYCHAIN_PASSWORD" $KEYCHAIN_PATH
+          security list-keychain -d user -s $KEYCHAIN_PATH
 
-      - name: Export Archive
-        run: |
-          xcodebuild -exportArchive \
-            -archivePath "$ARCHIVE_PATH" \
-            -exportPath "$EXPORT_PATH" \
-            -exportOptionsPlist "$EXPORT_OPTIONS" \
-            -allowProvisioningUpdates
+          security find-identity -v -p codesigning $KEYCHAIN_PATH
 
-      - name: Upload to TestFlight
+      - name: Install provisioning profile
+        id: install-profile
         env:
-          ASC_KEY_ID: ${{ secrets.ASC_KEY_ID }}
-          ASC_ISSUER_ID: ${{ secrets.ASC_ISSUER_ID }}
-          ASC_PRIVATE_KEY: ${{ secrets.ASC_PRIVATE_KEY }}
+          BUILD_PROVISION_PROFILE_BASE64: ${{ secrets.APPLE_PROVISIONING_PROFILE_BASE64 }}
         run: |
-          if [ -n "$ASC_KEY_ID" ] && [ -n "$ASC_ISSUER_ID" ] && [ -n "$ASC_PRIVATE_KEY" ]; then
-            mkdir -p ~/.private_keys
-            echo "$ASC_PRIVATE_KEY" > ~/.private_keys/AuthKey_${ASC_KEY_ID}.p8
+          mkdir -p ~/Library/MobileDevice/Provisioning\ Profiles
 
-            xcrun altool --upload-app \
-              --type ios \
-              --file "$EXPORT_PATH/TakeHome.ipa" \
-              --apiKey "$ASC_KEY_ID" \
-              --apiIssuer "$ASC_ISSUER_ID"
+          PP_PATH=$RUNNER_TEMP/build_pp.mobileprovision
+          echo -n "$BUILD_PROVISION_PROFILE_BASE64" | base64 --decode -o $PP_PATH
 
-            rm -f ~/.private_keys/AuthKey_${ASC_KEY_ID}.p8
-          else
-            echo "::warning::No App Store Connect API key configured."
-            echo "Set these repository secrets to enable automatic upload:"
-            echo "  - ASC_KEY_ID: Your API Key ID"
-            echo "  - ASC_ISSUER_ID: Your Issuer ID"
-            echo "  - ASC_PRIVATE_KEY: Contents of AuthKey_XXXX.p8"
-            echo ""
-            echo "Archive exported successfully. Upload manually via Xcode Organizer or Transporter."
-            ls -la "$EXPORT_PATH/"
-          fi
+          PP_CONTENT=$(/usr/bin/security cms -D -i $PP_PATH)
+          PP_UUID=$(/usr/libexec/PlistBuddy -c "Print UUID" /dev/stdin <<< "$PP_CONTENT")
+          PP_NAME=$(/usr/libexec/PlistBuddy -c "Print Name" /dev/stdin <<< "$PP_CONTENT")
 
-      - name: Upload Build Artifacts
+          cp $PP_PATH ~/Library/MobileDevice/Provisioning\ Profiles/$PP_UUID.mobileprovision
+
+          echo "Installed provisioning profile: $PP_NAME (UUID: $PP_UUID)"
+          echo "PP_UUID=$PP_UUID" >> $GITHUB_OUTPUT
+          echo "PP_NAME=$PP_NAME" >> $GITHUB_OUTPUT
+
+      - name: Deploy to TestFlight
+        env:
+          APP_STORE_CONNECT_API_KEY_ID: ${{ secrets.APP_STORE_CONNECT_API_KEY_ID }}
+          APP_STORE_CONNECT_API_KEY_ISSUER_ID: ${{ secrets.APP_STORE_CONNECT_ISSUER_ID }}
+          APP_STORE_CONNECT_API_KEY_KEY_FILEPATH: ./fastlane/AuthKey.p8
+          APPLE_PROVISIONING_PROFILE_NAME: ${{ steps.install-profile.outputs.PP_NAME }}
+          APPLE_PROVISIONING_PROFILE_UUID: ${{ steps.install-profile.outputs.PP_UUID }}
+          APPLE_TEAM_ID: ${{ secrets.APPLE_TEAM_ID }}
+          FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT: 120
+          FASTLANE_XCODEBUILD_SETTINGS_RETRIES: 5
+        run: |
+          export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
+          bundle exec fastlane beta_manual \
+            changelog:"Automated build from CI"
+
+      - name: Clean up
         if: always()
-        uses: actions/upload-artifact@v4
-        with:
-          name: takehome-build-${{ env.BUILD_NUMBER }}
-          path: |
-            build/export/*.ipa
-          retention-days: 30
-
-      - name: Summary
-        env:
-          GIT_SHA: ${{ github.sha }}
         run: |
-          echo "## Build Summary" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Version:** 1.0.0 ($BUILD_NUMBER)" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Scheme:** $SCHEME" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Configuration:** Release" >> "$GITHUB_STEP_SUMMARY"
-          echo "- **Commit:** $GIT_SHA" >> "$GITHUB_STEP_SUMMARY"
-          if [ -f "$EXPORT_PATH/TakeHome.ipa" ]; then
-            IPA_SIZE=$(du -h "$EXPORT_PATH/TakeHome.ipa" | cut -f1)
-            echo "- **IPA Size:** ${IPA_SIZE}" >> "$GITHUB_STEP_SUMMARY"
-          fi
+          rm -f fastlane/AuthKey.p8 || true
+          security delete-keychain $RUNNER_TEMP/app-signing.keychain-db || true
