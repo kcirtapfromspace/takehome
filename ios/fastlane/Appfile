@@ -1,4 +1,4 @@
-app_identifier("com.takehome.app")
+app_identifier("com.takehomepay.app")
 
 # App Store Connect API configured via environment variables in CI:
 # - APP_STORE_CONNECT_API_KEY_ID
