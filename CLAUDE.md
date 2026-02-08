@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-TakeHome is an iOS financial planning app (not yet built) based on a proven 10-year Google Sheets system. The complete Product Requirements Document is in `TakeHome_PRD_v2.md`.
+CashCast (formerly TakeHome) is an iOS financial planning app based on a proven 10-year Google Sheets system. The complete Product Requirements Document is in `TakeHome_PRD_v2.md`. The App Store name is "CashCast" (bundle ID: com.takehomepay.app).
 
 **Platform:** iOS 16+ with SwiftUI
 **Storage:** Core Data (local-first) with CloudKit sync
@@ -102,7 +102,7 @@ Phase 1 MVP features (in priority order):
 
 1. **Superwall Paywall (CRITICAL — not integrated at all)**
    - Add Superwall SDK via SPM
-   - Initialize in TakeHomeApp.swift
+   - Initialize in TakeHomeApp.swift (internal name kept as TakeHome)
    - Gate after first calculation result (user sees value → paywall)
    - Configure products in App Store Connect: $6.99/mo or $39.99/yr
    - Primary placement: `first_calculation_complete`
@@ -118,7 +118,7 @@ Phase 1 MVP features (in priority order):
 6. **Screenshots** — Key shots: multi-timeframe view, household mode, scenario planner
 
 7. **App Store Metadata:**
-   - Name: "TakeHome — Salary After Tax Calculator"
+   - Name: "CashCast — Salary After Tax Calculator"
    - Subtitle: "See Your Real Pay in 6 Timeframes"
    - Keywords: "take home pay calculator", "salary after tax", "paycheck calculator", "net pay calculator", "income tax calculator", "salary calculator [state]"
    - Category: Finance
@@ -126,8 +126,8 @@ Phase 1 MVP features (in priority order):
 8. **Privacy Policy** — Required even for local-only data (use template generator)
 
 ### Nice-to-Have (Post-Launch)
-- Fastlane build/deploy automation
-- CI/CD workflows (GitHub Actions)
+- ~~Fastlane build/deploy automation~~ DONE
+- ~~CI/CD workflows (GitHub Actions)~~ DONE — self-hosted runner, TestFlight deploys on push to main
 - CloudKit sync
 - WASM web calculator (for SEO landing pages)
 

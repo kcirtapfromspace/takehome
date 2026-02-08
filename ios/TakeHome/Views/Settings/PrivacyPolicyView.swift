@@ -11,12 +11,12 @@ struct PrivacyPolicyView: View {
 
                     section(
                         title: "Overview",
-                        body: "TakeHome (\"the App\") is a financial calculator that estimates your take-home pay after federal and state taxes. We are committed to protecting your privacy. This policy describes how the App handles your information."
+                        body: "CashCast (\"the App\") is a financial calculator that estimates your take-home pay after federal and state taxes. We are committed to protecting your privacy. This policy describes how the App handles your information."
                     )
 
                     section(
                         title: "Data Collection",
-                        body: "TakeHome does not collect, transmit, or store any personal data on external servers. All financial information you enter — including salary, deductions, expenses, and location — is processed and stored locally on your device only. The developer has no access to this data."
+                        body: "CashCast does not collect, transmit, or store any personal data on external servers. All financial information you enter — including salary, deductions, expenses, and location — is processed and stored locally on your device only. The developer has no access to this data."
                     )
 
                     section(
@@ -26,7 +26,7 @@ struct PrivacyPolicyView: View {
 
                     section(
                         title: "Accounts and Registration",
-                        body: "TakeHome does not require any account creation, login, or registration. There is no user authentication system. You can use the App immediately after downloading."
+                        body: "CashCast does not require any account creation, login, or registration. There is no user authentication system. You can use the App immediately after downloading."
                     )
                 }
 
@@ -38,7 +38,7 @@ struct PrivacyPolicyView: View {
 
                     section(
                         title: "Cookies and Tracking",
-                        body: "TakeHome does not use cookies, web tracking, advertising identifiers, or any analytics frameworks. The App does not track your behavior or build a profile about you."
+                        body: "CashCast does not use cookies, web tracking, advertising identifiers, or any analytics frameworks. The App does not track your behavior or build a profile about you."
                     )
 
                     section(
@@ -58,7 +58,7 @@ struct PrivacyPolicyView: View {
 
                     section(
                         title: "Contact",
-                        body: "If you have questions about this privacy policy or the App's data practices, please contact us at privacy@takehome.app."
+                        body: "If you have questions about this privacy policy or the App's data practices, please contact us at privacy@cashcast.app."
                     )
                 }
             }
