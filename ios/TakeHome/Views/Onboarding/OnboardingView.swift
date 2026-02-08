@@ -289,7 +289,7 @@ struct WelcomeStepView: View {
                 .foregroundColor(.accentColor)
 
             VStack(spacing: 16) {
-                Text("Welcome to TakeHome")
+                Text("Welcome to CashCast")
                     .font(.largeTitle)
                     .fontWeight(.bold)
 
