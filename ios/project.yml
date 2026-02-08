@@ -50,6 +50,7 @@ targets:
         PRODUCT_BUNDLE_IDENTIFIER: com.takehomepay.app
         ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
         GENERATE_INFOPLIST_FILE: "NO"
+        TARGETED_DEVICE_FAMILY: "1"
         LIBRARY_SEARCH_PATHS:
           - $(inherited)
           - "../bindings/TakeHomeCore.xcframework/ios-arm64-simulator"
