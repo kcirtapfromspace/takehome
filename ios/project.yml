@@ -38,10 +38,7 @@ targets:
     sources:
       - path: TakeHome
         excludes:
-          - "**/*.xcassets"
           - "**/Info.plist"
-    resources:
-      - path: TakeHome/Resources/Assets.xcassets
     dependencies:
       - framework: ../bindings/TakeHomeCore.xcframework
         embed: false
