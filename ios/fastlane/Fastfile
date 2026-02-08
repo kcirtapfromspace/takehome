@@ -22,6 +22,7 @@ platform :ios do
       scheme: "TakeHome",
       configuration: "Release",
       export_method: "app-store",
+      clean: true,
       derived_data_path: "./build/DerivedData",
       xcargs: "-parallelizeTargets -jobs #{`sysctl -n hw.ncpu`.strip}"
     }
