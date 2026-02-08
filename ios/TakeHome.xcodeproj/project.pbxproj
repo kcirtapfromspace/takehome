@@ -19,6 +19,7 @@
 		265DBA0D4788416C1E47E296 /* OnboardingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EF3D1335D0D582A496D44DB /* OnboardingUITests.swift */; };
 		2983B718057309D2FED0D73E /* IncomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 736A318D3C1C90A37B8D8857 /* IncomeViewModelTests.swift */; };
 		2AA651F810A9CC6C1A4B686E /* DependencyContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C3A05E85F1A2DD36687319E5 /* DependencyContainer.swift */; };
+		2B24440954970E1C9375A9C5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8149B9E9292C9E9DF24C5A3F /* Assets.xcassets */; };
 		32357C9FC26DF397E595F74F /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6939E60A6056737E8E926267 /* DashboardViewModel.swift */; };
 		33DEC9A94EF96186D790E6AB /* DeductionFrequency.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E4EE489DAB7F8FC05127FA1 /* DeductionFrequency.swift */; };
 		395154B27A9C4913C675401F /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD06CAFEBD39AF6B470B7F56 /* DashboardView.swift */; };
@@ -117,6 +118,7 @@
 		7AFCFC24E094FE1C4B843011 /* ScenarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioViewModel.swift; sourceTree = "<group>"; };
 		7FF9DC5C32A1E78080E3BD7A /* HouseholdType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdType.swift; sourceTree = "<group>"; };
 		807910A72B6F20B93CEBF414 /* DecimalConversions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecimalConversions.swift; sourceTree = "<group>"; };
+		8149B9E9292C9E9DF24C5A3F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		81848DFB45F0599D1B495CD7 /* ExpensesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpensesView.swift; sourceTree = "<group>"; };
 		87C1A50E64D3496D17DD953E /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		8D1051B6237880FA114A957E /* HouseholdTypeStepView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseholdTypeStepView.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 		8092542EFF38161F49C37392 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				8149B9E9292C9E9DF24C5A3F /* Assets.xcassets */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -459,6 +462,7 @@
 			buildPhases = (
 				48376BDFECACACEDE508A7D4 /* Copy FFI Bindings */,
 				9739BC98888680A0392E7AE1 /* Sources */,
+				900B09CEC50B5B96A90DA9E6 /* Resources */,
 				7874D20BDC127FA422D51633 /* Frameworks */,
 			);
 			buildRules = (
@@ -514,6 +518,17 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		900B09CEC50B5B96A90DA9E6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B24440954970E1C9375A9C5 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		48376BDFECACACEDE508A7D4 /* Copy FFI Bindings */ = {
